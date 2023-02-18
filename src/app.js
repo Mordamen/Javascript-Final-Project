@@ -1,52 +1,45 @@
-import PAGES from "./models/pages.js";
+import PAGES from "./models/pagesDefinition.js";
 import { handlePageChange } from "./routes/router.js";
-// import "./initialData/initialData.js";
-// import "./pages/RegisterPage.js";
-// import "./pages/LoginPage.js";
-// import "./pages/ProfilePage.js";
-// import { showNewPopup } from "./pages/HomePage.js";
-// import initializeNavbar from "./components/Navbar.js";
-// import checkIfConnected from "./utils/checkIfConnected.js";
+import "./initialData/initialData.js";
+import "./pages/RegisterPage.js";
+import "./pages/LoginPage.js";
+import "./pages/ProfilePage.js";
+import { showNewPopup } from "./pages/HomePage.js";
+import initializeNavbar from "./components/Navbar.js";
+import checkIfConnected from "./utils/checkIfConnected.js";
 
-// window.addEventListener("load", () => {
-//   initializeNavbar(showNewPopup);
-//   if (checkIfConnected()) {
-//     let user = localStorage.getItem("token");
-//     user = JSON.parse(user);
-//     navEditProfilePage.innerText = user.name;
-//   }
-// });
+const navHomeLink = document.getElementById("nav-home");
+const navAboutusLink = document.getElementById("nav-about");
+const navRegisterPageLink = document.getElementById("nav-signup");
+const navLoginPageLink = document.getElementById("nav-login");
+const navEditProfilePage = document.getElementById("nav-edit-profile-page");
+const navLogout = document.getElementById("nav-logout");
 
-//--------------------------------------------------------------------------------------------//
-// Setup Navbar links. This will allow us to control the navbar pages using these variables
-const navHome = document.getElementById("nav-home");
-const navAbout = document.getElementById("nav-about");
-// const navContactusLink = document.getElementById("nav-contactus-link");
-const navSignupPage = document.getElementById("nav-signup");
-const navLoginPage = document.getElementById("nav-login");
-// const navEditProfilePage = document.getElementById("nav-edit-profile-page");
-// const navLogout = document.getElementById("nav-logout");
+window.addEventListener("load", () => {
+  initializeNavbar(showNewPopup);
+  if (checkIfConnected()) {
+    let user = localStorage.getItem("token");
+    user = JSON.parse(user);
+    navEditProfilePage.innerText = user.name;
+  }
+});
 
-// Create event listeners to watch for the user clicking on the navbar links
-navHome.addEventListener("click", function () {
+navHomeLink.addEventListener("click", function () {
   handlePageChange(PAGES.HOME);
 });
-navAbout.addEventListener("click", function () {
+navAboutusLink.addEventListener("click", function () {
   handlePageChange(PAGES.ABOUT);
 });
-
-navSignupPage.addEventListener("click", function () {
+navRegisterPageLink.addEventListener("click", function () {
   handlePageChange(PAGES.REGISTER);
 });
-navLoginPage.addEventListener("click", function () {
+navLoginPageLink.addEventListener("click", function () {
   handlePageChange(PAGES.LOGIN);
 });
-// navEditProfilePage.addEventListener("click", () => {
-//   handlePageChange(PAGES.PROFILE);
-// });
-// navLogout.addEventListener("click", () => {
-//   localStorage.removeItem("token");
-//   location.reload();
-// });
-
-// --------------------------------------------------------------------------------------------//
+navEditProfilePage.addEventListener("click", () => {
+  handlePageChange(PAGES.PROFILE);
+});
+navLogout.addEventListener("click", () => {
+  localStorage.removeItem("token");
+  location.reload();
+});
