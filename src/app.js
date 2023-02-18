@@ -34,9 +34,7 @@ navHome.addEventListener("click", function () {
 navAbout.addEventListener("click", function () {
   handlePageChange(PAGES.ABOUT);
 });
-// navContactusLink.addEventListener("click", function () {
-//   handlePageChange(PAGES.CONTACT);
-// });
+
 navSignupPage.addEventListener("click", function () {
   handlePageChange(PAGES.REGISTER);
 });
