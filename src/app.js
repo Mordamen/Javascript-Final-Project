@@ -1,4 +1,4 @@
-import PAGES from "./models/pages.js";
+import PAGES from "./models/pageModel.js";
 import { handlePageChange } from "./routes/router.js";
 import "./initialData/initialData.js";
 import "./pages/RegisterPage.js";
@@ -7,11 +7,15 @@ import "./pages/ProfilePage.js";
 import { showNewPopup } from "./pages/HomePage.js";
 import initializeNavbar from "./components/Navbar.js";
 import checkIfConnected from "./utils/checkIfConnected.js";
+// console.log("🚀 ~ file: app.js:3 ~ handlePageChange", handlePageChange);
 
-const navHomeLink = document.getElementById("nav-home");
-const navAboutusLink = document.getElementById("nav-about");
-const navRegisterPageLink = document.getElementById("nav-signup");
-const navLoginPageLink = document.getElementById("nav-login");
+// console.log(PAGES);
+
+const navHomeLink = document.getElementById("nav-home-link");
+const navAboutusLink = document.getElementById("nav-aboutus-link");
+const navContactusLink = document.getElementById("nav-contactus-link");
+const navRegisterPageLink = document.getElementById("nav-register-page");
+const navLoginPageLink = document.getElementById("nav-login-page");
 const navEditProfilePage = document.getElementById("nav-edit-profile-page");
 const navLogout = document.getElementById("nav-logout");
 
@@ -29,6 +33,9 @@ navHomeLink.addEventListener("click", function () {
 });
 navAboutusLink.addEventListener("click", function () {
   handlePageChange(PAGES.ABOUT);
+});
+navContactusLink.addEventListener("click", function () {
+  handlePageChange(PAGES.CONTACT);
 });
 navRegisterPageLink.addEventListener("click", function () {
   handlePageChange(PAGES.REGISTER);

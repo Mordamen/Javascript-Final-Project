@@ -1,4 +1,4 @@
-import PAGES from "../models/pages.js";
+import PAGES from "../models/pageModel.js";
 
 /* Out pages */
 const HOMEPAGELINK = document.getElementById(PAGES.HOME);
@@ -11,51 +11,53 @@ const PAGE404PAGELINK = document.getElementById(PAGES.PAGE404);
 
 function handlePageChange(pageToDisplay) {
   /* hide all pages */
-  HOMEPAGELINK.classList.remove("active-page");
-  ABOUTUSPAGELINK.classList.remove("active-page");
-  CONTACTUSPAGELINK.classList.remove("active-page");
-  LOGINTUSPAGELINK.classList.remove("active-page");
-  REGISTERUSPAGELINK.classList.remove("active-page");
-  PROFILEPAGELINK.classList.remove("active-page");
-  PAGE404PAGELINK.classList.remove("active-page");
-  HOMEPAGELINK.classList.add("inactive-page");
-  ABOUTUSPAGELINK.classList.add("inactive-page");
-  CONTACTUSPAGELINK.classList.add("inactive-page");
-  LOGINTUSPAGELINK.classList.add("inactive-page");
-  REGISTERUSPAGELINK.classList.add("inactive-page");
-  PROFILEPAGELINK.classList.add("inactive-page");
-  PAGE404PAGELINK.classList.add("inactive-page");
+  HOMEPAGELINK.classList.remove("d-block");
+  ABOUTUSPAGELINK.classList.remove("d-block");
+  CONTACTUSPAGELINK.classList.remove("d-block");
+  LOGINTUSPAGELINK.classList.remove("d-block");
+  REGISTERUSPAGELINK.classList.remove("d-block");
+  PROFILEPAGELINK.classList.remove("d-block");
+  PAGE404PAGELINK.classList.remove("d-block");
+  HOMEPAGELINK.classList.add("d-none");
+  ABOUTUSPAGELINK.classList.add("d-none");
+  CONTACTUSPAGELINK.classList.add("d-none");
+  LOGINTUSPAGELINK.classList.add("d-none");
+  REGISTERUSPAGELINK.classList.add("d-none");
+  PROFILEPAGELINK.classList.add("d-none");
+  PAGE404PAGELINK.classList.add("d-none");
 
   switch (pageToDisplay) {
     case PAGES.HOME:
-      HOMEPAGELINK.classList.remove("inactive-page");
-      HOMEPAGELINK.classList.add("active-page");
+      HOMEPAGELINK.classList.remove("d-none");
+      HOMEPAGELINK.classList.add("d-block");
       break;
     case PAGES.ABOUT:
-      ABOUTUSPAGELINK.classList.remove("inactive-page");
-      ABOUTUSPAGELINK.classList.add("active-page");
+      ABOUTUSPAGELINK.classList.remove("d-none");
+      ABOUTUSPAGELINK.classList.add("d-block");
       break;
     case PAGES.CONTACT:
-      CONTACTUSPAGELINK.classList.remove("inactive-page");
-      CONTACTUSPAGELINK.classList.add("active-page");
+      CONTACTUSPAGELINK.classList.remove("d-none");
+      CONTACTUSPAGELINK.classList.add("d-block");
       break;
     case PAGES.LOGIN:
-      LOGINTUSPAGELINK.classList.remove("inactive-page");
-      LOGINTUSPAGELINK.classList.add("active-page");
+      LOGINTUSPAGELINK.classList.remove("d-none");
+      LOGINTUSPAGELINK.classList.add("d-block");
       break;
     case PAGES.REGISTER:
-      REGISTERUSPAGELINK.classList.remove("inactive-page");
-      REGISTERUSPAGELINK.classList.add("active-page");
+      REGISTERUSPAGELINK.classList.remove("d-none");
+      REGISTERUSPAGELINK.classList.add("d-block");
       break;
     case PAGES.PROFILE:
-      PROFILEPAGELINK.classList.remove("inactive-page");
-      PROFILEPAGELINK.classList.add("active-page");
+      PROFILEPAGELINK.classList.remove("d-none");
+      PROFILEPAGELINK.classList.add("d-block");
       break;
     default:
-      PAGE404PAGELINK.classList.remove("inactive-page");
-      PAGE404PAGELINK.classList.add("active-page");
+      PAGE404PAGELINK.classList.remove("d-none");
+      PAGE404PAGELINK.classList.add("d-block");
       break;
   }
 }
 
-export { handlePageChange };
+function anotherFunction() {}
+
+export { handlePageChange, anotherFunction };
