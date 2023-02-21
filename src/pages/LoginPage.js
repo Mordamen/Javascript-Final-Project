@@ -1,6 +1,6 @@
 import validateEmail from "../validation/validateEmail.js";
 import validatePassword from "../validation/validatePassword.js";
-import PAGES from "../models/pageModel.js";
+import PAGES from "../models/pages.js";
 import { handlePageChange } from "../routes/router.js";
 
 const loginEmailInput = document.querySelector("#login-input-email");
@@ -38,10 +38,6 @@ loginPasswordInput.addEventListener("input", () => {
     document.getElementById("login-alert-password").classList.remove("d-none");
     document.getElementById("login-alert-password").innerHTML =
       errorArr.join("<br>");
-    /*
-        let str = errorArr.join("<br>")
-        document.getElementById("login-alert-password").innerHTML = str
-      */
   }
 });
 

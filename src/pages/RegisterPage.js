@@ -1,4 +1,4 @@
-import PAGES from "../models/pageModel.js";
+import PAGES from "../models/pages.js";
 import { handlePageChange } from "../routes/router.js";
 import validateEmail from "../validation/validateEmail.js";
 import validatePassword from "../validation/validatePassword.js";
