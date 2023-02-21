@@ -12,29 +12,3 @@ const validate = (regex, value, min, max) => {
   return msgsArr;
 };
 export default validate;
-
-/*
-    [//min
-        " to short"
-    ]
-    [//max
-        " to long"
-    ]
-    [//regex
-        " invalid"
-    ]
-    [// max and regex
-        " to long",
-        " invalid"
-    ]
-*/
-
-// validate(
-//   new RegExp(
-//     "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{0,}$",
-//     "g"
-//   ),
-//   "Aa123456!",
-//   0,
-//   20
-// );
