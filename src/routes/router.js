@@ -1,4 +1,4 @@
-import PAGES from "../models/pagesDefinition.js";
+import PAGES from "../models/pages.js";
 
 /* Out pages */
 const HOMEPAGELINK = document.getElementById(PAGES.HOME);

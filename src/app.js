@@ -1,4 +1,4 @@
-import PAGES from "./models/pagesDefinition.js";
+import PAGES from "./models/pages.js";
 import { handlePageChange } from "./routes/router.js";
 import "./initialData/initialData.js";
 import "./pages/RegisterPage.js";

@@ -117,66 +117,171 @@
         <header></header>
         <h1>About Page</h1>
       </section>
-      <!-- ------------------------------ HOME PAGE  -------------------------------------- -->
+      <!-- ------------------------------ lOGIN PAGE  ------------------------------------- -->
       <section class="inactive-page" id="login-page">
         <header></header>
-        <h1>Login Page</h1>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col testing-border">
-              <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-4 position-relative">
-                  <label for="validationTooltipUsername" class="form-label"
-                    >Username</label
-                  >
-                  <div class="input-group has-validation">
-                    <span
-                      class="input-group-text"
-                      id="validationTooltipUsernamePrepend"
-                      >@</span
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="validationTooltipUsername"
-                      aria-describedby="validationTooltipUsernamePrepend"
-                      value="Your username"
-                      required
-                    />
-                    <div class="invalid-tooltip">
-                      Please choose a unique and valid username.
-                    </div>
-                  </div>
-                </div>
-                <div class="w-100"></div>
-                <div class="col-md-3 position-relative">
-                  <label for="validationTooltip05" class="form-label"
-                    >Password</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="validationTooltip05"
-                    value="Your password"
-                    required
-                  />
-                  <div class="invalid-tooltip">Please provide a valid zip.</div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">
-                    Submit form
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div class="col testing-border">Column</div>
+        <h1>Login page</h1>
+        <form onsubmit="event.preventDefault()">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="login-input-email"
+              placeholder="name@example.com"
+            />
+            <label for="login-input-email">Email address</label>
           </div>
-        </div>
+          <div
+            class="alert alert-danger d-none"
+            role="alert"
+            id="login-alert-email"
+          >
+            Email rules
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="login-input-password"
+              placeholder="Password"
+            />
+            <label for="login-input-password">Password</label>
+          </div>
+          <div
+            class="alert alert-danger d-none"
+            role="alert"
+            id="login-alert-password"
+          >
+            Password rules
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <button class="btn btn-primary" id="login-btn">Submit</button>
+        </form>
       </section>
-      <!-- ------------------------------ HOME PAGE  -------------------------------------- -->
+      <!-- ------------------------------ SIGNUP PAGE  ------------------------------------ -->
       <section class="inactive-page" id="signup-page">
         <header></header>
-        <h1>Register Page</h1>
+        <h1>Register page</h1>
+        <form onsubmit="event.preventDefault()">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="register-input-name"
+              placeholder="Your name"
+            />
+            <label for="register-input-name">Name</label>
+          </div>
+          <div
+            class="alert alert-danger d-none"
+            role="alert"
+            id="register-alert-name"
+          >
+            Name rules
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="register-input-email"
+              placeholder="name@example.com"
+            />
+            <label for="register-input-email">Email address</label>
+          </div>
+          <div
+            class="alert alert-danger d-none"
+            role="alert"
+            id="register-alert-email"
+          >
+            Email rules
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="register-input-password"
+              placeholder="Password"
+            />
+            <label for="register-input-password">Password</label>
+          </div>
+          <div
+            class="alert alert-danger d-none"
+            role="alert"
+            id="register-alert-password"
+          >
+            Name rules
+          </div>
+          <button class="btn btn-danger" disabled="true" id="register-btn">
+            Register
+          </button>
+        </form>
+      </section>
+      <!-- ------------------------------ PROFILE PAGE  ------------------------------------ -->
+      <section class="inactive-page" id="profile-page">
+        <header></header>
+        <h1>Profile page</h1>
+        <form onsubmit="event.preventDefault()">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="profile-input-name"
+              placeholder="Your name"
+            />
+            <label for="profile-input-name">Name</label>
+          </div>
+          <div
+            class="alert alert-danger d-none"
+            role="alert"
+            id="profile-alert-name"
+          >
+            Name rules
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="profile-input-email"
+              placeholder="name@example.com"
+            />
+            <label for="profile-input-email">Email address</label>
+          </div>
+          <div
+            class="alert alert-danger d-none"
+            role="alert"
+            id="profile-alert-email"
+          >
+            Email rules
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="profile-input-password"
+              placeholder="Password"
+            />
+            <label for="profile-input-password">Password</label>
+          </div>
+          <div
+            class="alert alert-danger d-none"
+            role="alert"
+            id="profile-alert-password"
+          >
+            Name rules
+          </div>
+          <button class="btn btn-danger" disabled="true" id="profile-btn">
+            Update
+          </button>
+        </form>
       </section>
       <!-- ------------------------------ 404 PAGE  -------------------------_------------- -->
       <section class="inactive-page" id="404-page">

@@ -1,6 +1,6 @@
 import validateEmail from "../validation/validateEmail.js";
 import validatePassword from "../validation/validatePassword.js";
-import PAGES from "../models/pageModel.js";
+import PAGES from "../models/pages.js";
 import { handlePageChange } from "../routes/router.js";
 
 const loginEmailInput = document.querySelector("#login-input-email");
