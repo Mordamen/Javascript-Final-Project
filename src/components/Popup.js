@@ -1,5 +1,5 @@
 import Property from "../models/Property.js";
-import getNextId from "../utils/getNextId.js";
+import getNextId from "../utilities/getNextId.js";
 
 let selectedProperty, editProperty;
 const editPropertiesPopupImgDisplay = document.getElementById(

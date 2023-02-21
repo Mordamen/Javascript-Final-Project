@@ -1,6 +1,6 @@
-import checkIfAdmin from "../utils/checkIfAdmin.js";
-import checkIfConnected from "../utils/checkIfConnected.js";
-import getNextId from "../utils/getNextId.js";
+import checkIfAdmin from "../utilities/checkIfAdmin.js";
+import checkIfConnected from "../utilities/checkIfConnected.js";
+import getNextId from "../utilities/getNextId.js";
 
 let nextId;
 let isAdmin;

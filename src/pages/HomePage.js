@@ -11,7 +11,7 @@ import {
   updatePropertiesCarousel,
 } from "../components/PropertiesCarousel.js";
 import { initPopup } from "../components/Popup.js";
-import checkIfAdmin from "../utils/checkIfAdmin.js";
+import checkIfAdmin from "../utilities/checkIfAdmin.js";
 
 let propertiesArr, originalPropertiesArr;
 let displayNow; // display that we can see now

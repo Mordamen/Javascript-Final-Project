@@ -4,7 +4,7 @@ import validateEmail from "../validation/validateEmail.js";
 import validatePassword from "../validation/validatePassword.js";
 import validateName from "../validation/validateName.js";
 import User from "../models/User.js";
-import showToast from "../services/Toast.js";
+import showToast from "../utilities/Toast.js";
 
 const inputName = document.getElementById("register-input-name");
 const inputEmail = document.getElementById("register-input-email");

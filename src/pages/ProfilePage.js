@@ -1,7 +1,7 @@
 import validateEmail from "../validation/validateEmail.js";
 import validatePassword from "../validation/validatePassword.js";
 import validateName from "../validation/validateName.js";
-import showToast from "../services/Toast.js";
+import showToast from "../utilities/Toast.js";
 
 const inputName = document.getElementById("profile-input-name");
 const inputEmail = document.getElementById("profile-input-email");

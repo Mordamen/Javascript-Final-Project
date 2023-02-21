@@ -6,7 +6,7 @@ import "./pages/LoginPage.js";
 import "./pages/ProfilePage.js";
 import { showNewPopup } from "./pages/HomePage.js";
 import initializeNavbar from "./components/Navbar.js";
-import checkIfConnected from "./utils/checkIfConnected.js";
+import checkIfConnected from "./utilities/checkIfConnected.js";
 
 const navHomeLink = document.getElementById("nav-home");
 const navAboutusLink = document.getElementById("nav-about");
