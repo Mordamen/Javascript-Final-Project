@@ -9,7 +9,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="https://pipeline.mediumra.re/assets/img/logo-color.svg"
+      href="./assets/imgs/Transparent Circle.png"
     />
     <!-- Importing Bootstrap -->
     <link
@@ -33,105 +33,105 @@
   </head>
 
   <body>
-    <main>
-      <!-- ------------------------------ NAVBAR ------------------------------------------ -->
-      <section class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <!-- Branded Logo: -->
-            <a class="nav-brand" href="#" id="nav-home">
-              <img
-                src="https://pipeline.mediumra.re/assets/img/logo-color.svg"
-                alt="Bootstrap"
-                width="32"
-                height="32"
-              />
-            </a>
-            <!-- Responsive Toggle for Smaller screens: -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  Offcanvas
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
+    <!-- ------------------------------ NAVBAR ------------------------------------------ -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- Branded Logo: -->
+          <a class="nav-brand" href="#" id="nav-home">
+            <img
+              src="./assets/imgs/Transparent Circle.png"
+              alt="Bootstrap"
+              width="32"
+              height="32"
+            />
+          </a>
+          <!-- Responsive Toggle for Smaller screens: -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- ------------------------------ NAV ITEMS  ------------------------------ -->
+            <div class="offcanvas-body">
+              <div class="navbar-nav me-auto my-2 my-lg-0">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  id="nav-about"
+                  >About</a
+                >
               </div>
-              <!-- ------------------------------ NAV ITEMS  ------------------------------ -->
-              <div class="offcanvas-body">
-                <div class="navbar-nav me-auto my-2 my-lg-0">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#"
-                    id="nav-about"
-                    >About</a
+              <!-- ------------------------ BEFORE USER LOGIN ------------------------- -->
+              <div class="navbar-nav">
+                <form
+                  class="d-flex responsive-nav-flex"
+                  role="search"
+                  id="navBeforeLogin"
+                >
+                  <a class="nav-link responsive-mt" href="#" id="nav-login"
+                    >Sign In</a
                   >
-                </div>
-                <!-- ------------------------ BEFORE USER LOGIN ------------------------- -->
-                <div class="navbar-nav">
-                  <form
-                    class="d-flex responsive-nav-flex"
-                    role="search"
-                    id="navBeforeLogin"
+                  <button
+                    class="btn btn-outline-success"
+                    type="submit"
+                    id="nav-signup"
                   >
-                    <a class="nav-link responsive-mt" href="#" id="nav-login"
-                      >Sign In</a
-                    >
-                    <button
-                      class="btn btn-outline-success"
-                      type="submit"
-                      id="nav-signup"
-                    >
-                      Sign Up
-                    </button>
-                  </form>
-                  <!-- ------------------------ AFTER USER LOGIN ------------------------- -->
-                  <form
-                    class="d-flex responsive-nav-flex d-none"
-                    role="search"
-                    id="navAfterLogin"
+                    Sign Up
+                  </button>
+                </form>
+                <!-- ------------------------ AFTER USER LOGIN ------------------------- -->
+                <form
+                  class="d-flex responsive-nav-flex d-none"
+                  role="search"
+                  id="navAfterLogin"
+                >
+                  <a class="nav-link me-3" href="#" id="nav-edit-profile-page"
+                    >Name</a
                   >
-                    <a class="nav-link me-3" href="#" id="nav-edit-profile-page"
-                      >Name</a
-                    >
-                    <a class="nav-link responsive-mt" href="#" id="nav-logout"
-                      >Logout</a
-                    >
-                  </form>
-                  <a class="nav-link" href="#" id="nav-add-new-property-link"
-                    >Add new property</a
+                  <a class="nav-link responsive-mt" href="#" id="nav-logout"
+                    >Logout</a
                   >
-                </div>
-                <!-- --------------------------------------------------------------- -->
+                </form>
+                <a class="nav-link" href="#" id="nav-add-new-property-link"
+                  >Add new property</a
+                >
               </div>
+              <!-- --------------------------------------------------------------- -->
             </div>
           </div>
-        </nav>
-      </section>
-      <div id="toast"></div>
+        </div>
+      </nav>
+    </header>
 
+    <main>
+      <div id="toast"></div>
       <!-- ------------------------------ HOME PAGE  -------------------------------------- -->
-      <section class="active-page container" id="home-page">
+      <section class="inactive-page container" id="home-page">
         <h1>Home page</h1>
         <div
           class="popup-wrapper d-flex justify-content-center align-items-center d-none"
@@ -332,56 +332,49 @@
         </form>
       </section>
       <!-- ------------------------------ lOGIN PAGE  ------------------------------------- -->
-      <section class="inactive-page container" id="login-page">
-        <h1>Login page</h1>
-        <div>
-          <form onsubmit="event.preventDefault()">
-            <div class="form-floating mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="login-input-email"
-                placeholder="name@example.com"
-              />
-              <label for="login-input-email">Email address</label>
-            </div>
-            <div
-              class="alert alert-danger d-none"
-              role="alert"
-              id="login-alert-email"
-            >
-              Email rules
-            </div>
-            <div class="form-floating">
-              <input
-                type="password"
-                class="form-control"
-                id="login-input-password"
-                placeholder="Password"
-              />
-              <label for="login-input-password">Password</label>
-            </div>
-            <div
-              class="alert alert-danger d-none"
-              role="alert"
-              id="login-alert-password"
-            >
-              Password rules
-            </div>
-            <div class="mb-3 form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Check me out</label
-              >
-            </div>
-            <button class="btn btn-primary" id="login-btn">Submit</button>
-          </form>
+      <section class="active-page container" id="login-page">
+        <div class="row align-items-start main-section">
+          <div class="col column_1">
+            <h2>Welcome Back!</h2>
+            <a>You can sign in to access your account</a>
+          </div>
+          <div class="col column_2">
+            <h2>Sign In to Continue</h2>
+            <form onsubmit="event.preventDefault()" class="login-section">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="login-input-email"
+                  placeholder="name@example.com"
+                />
+                <label for="login-input-email">Email address</label>
+              </div>
+              <div
+                class="alert alert-danger d-none"
+                role="alert"
+                id="login-alert-email"
+              ></div>
+              <hr />
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="login-input-password"
+                  placeholder="Password"
+                />
+                <label for="login-input-password">Password</label>
+              </div>
+              <div
+                class="alert alert-danger d-none"
+                role="alert"
+                id="login-alert-password"
+              ></div>
+              <hr />
+              <button class="btn btn-primary" id="login-btn">Submit</button>
+            </form>
+          </div>
         </div>
-        <div></div>
       </section>
       <!-- ------------------------------ PROFILE PAGE  ----------------------------------- -->
       <section class="inactive-page container" id="profile-page">

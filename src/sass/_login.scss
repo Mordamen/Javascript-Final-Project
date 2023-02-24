@@ -1,0 +1,61 @@
+#login-page {
+  // height: 100vh;
+}
+
+.main-section {
+  border-radius: 8px;
+  box-shadow: 10px 10px 20px 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  width: 70vw;
+  height: 70vh;
+}
+
+// .column_1 {
+//   background-image: url("https://www.nerdmuch.com/wp-content/uploads/2022/09/mtg.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   height: 100%;
+// }
+
+.column_1 {
+  // --mask: radial-gradient(
+  //       2.76rem at calc(100% - 3.9rem) 50%,
+  //       #cc1818 99%,
+  //       #be292900 101%
+  //     )
+  //     0 calc(50% - 4rem) / 100% 8rem,
+  //   radial-gradient(2.76rem at calc(100% + 1.9rem) 50%, #0000 99%, #000 101%)
+  //     calc(100% - 2rem) 50%/100% 8rem repeat-y;
+  // -webkit-mask: var(--mask);
+  // mask: var(--mask);
+}
+
+.login-section {
+  margin: 70px 0px;
+}
+
+hr {
+  clear: both;
+  position: relative;
+  display: block;
+  height: 0.15em;
+  // margin: 1.8em auto;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 68, 255),
+    rgba(0, 102, 255, 0)
+  );
+  border: none;
+  opacity: 100% !important;
+}
+
+#login-btn {
+  width: 100%;
+  border-radius: 16px;
+}
