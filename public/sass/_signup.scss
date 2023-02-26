@@ -1,14 +1,15 @@
-.main-section {
-  border-radius: 8px;
-  box-shadow: 10px 10px 20px 5px;
-  margin: auto;
+#signup-page {
+  max-width: 100% !important;
+}
+
+.main-nsection {
+  //   margin: auto;
   width: 100%;
+  max-width: 100% !important;
   height: 100%;
 }
 
-.column_1 {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+.column_n1 {
   text-align: center;
   justify-content: center;
   overflow: hidden;
@@ -22,7 +23,7 @@
   background-position: center;
 }
 
-.column_1::before {
+.column_n1::before {
   content: "";
   font-family: "shape divider from ShapeDividers.com";
   position: absolute;
@@ -39,14 +40,14 @@
 }
 
 @media (min-width: 768px) {
-  .column_1::before {
+  .column_n1::before {
     background-size: 90px 100%;
     background-position: 100% 50%;
   }
 }
 
 @media (min-width: 1025px) {
-  .column_1::before {
+  .column_n1::before {
     bottom: -0.1vw;
     left: -0.1vw;
     right: -0.1vw;
@@ -57,9 +58,7 @@
   }
 }
 
-.column_2 {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+.column_n2 {
   margin: auto;
   background-color: #0066ff;
   height: 100%;
