@@ -9,9 +9,24 @@
   box-sizing: border-box;
 }
 
+body {
+  // background-image: url("https://homebrewery.naturalcrit.com/assets/parchmentBackground.jpg");
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 68, 255),
+    rgba(0, 102, 255, 0)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  height: 100vh;
+}
+
 // Controls what the current active page on the navbar looks like
 .active-page {
-  display: block;
+  display: flex;
+  height: 100%;
 }
 
 // Controls what the current inactive pages on the navbar look like
@@ -23,8 +38,15 @@
   background-color: transparent !important;
 }
 
-body {
-  background-image: url("https://homebrewery.naturalcrit.com/assets/parchmentBackground.jpg");
+hr {
+  height: 0.15em;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 68, 255),
+    rgba(0, 102, 255, 0)
+  );
+  border: none;
+  opacity: 100% !important;
 }
 
 // Prefixes for any flexbox needed, as recommended on https://css-tricks.com/snippets/css/a-guide-to-flexbox/

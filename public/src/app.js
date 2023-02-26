@@ -11,6 +11,7 @@ import checkIfConnected from "./utilities/checkIfConnected.js";
 const navHomeLink = document.getElementById("nav-home");
 const navAboutusLink = document.getElementById("nav-about");
 const navRegisterPageLink = document.getElementById("nav-signup");
+const navRegisterPage2Link = document.getElementById("nav-signup_2");
 const navLoginPageLink = document.getElementById("nav-login");
 const navEditProfilePage = document.getElementById("nav-edit-profile-page");
 const navLogout = document.getElementById("nav-logout");
@@ -31,6 +32,9 @@ navAboutusLink.addEventListener("click", function () {
   handlePageChange(PAGES.ABOUT);
 });
 navRegisterPageLink.addEventListener("click", function () {
+  handlePageChange(PAGES.REGISTER);
+});
+navRegisterPage2Link.addEventListener("click", function () {
   handlePageChange(PAGES.REGISTER);
 });
 navLoginPageLink.addEventListener("click", function () {

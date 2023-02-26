@@ -86,8 +86,9 @@
                   >About</a
                 >
               </div>
-              <!-- ------------------------ BEFORE USER LOGIN ------------------------- -->
+              <!--  -->
               <div class="navbar-nav">
+                <!-- ------------------------ BEFORE USER LOGIN ------------------------- -->
                 <form
                   class="d-flex responsive-nav-flex"
                   role="search"
@@ -335,45 +336,52 @@
       <section class="active-page container" id="login-page">
         <div class="row align-items-start main-section">
           <div class="col column_1">
-            <h2>Welcome Back!</h2>
-            <a>You can sign in to access your account</a>
+            <div id="center-section">
+              <h2>Welcome Back!</h2>
+              <a>You can sign in to access your account</a>
+            </div>
           </div>
           <div class="col column_2">
-            <h2>Sign In to Continue</h2>
-            <form onsubmit="event.preventDefault()" class="login-section">
-              <div class="form-floating mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="login-input-email"
-                  placeholder="name@example.com"
-                />
-                <label for="login-input-email">Email address</label>
-              </div>
-              <div
-                class="alert alert-danger d-none"
-                role="alert"
-                id="login-alert-email"
-              ></div>
-              <hr />
-              <div class="form-floating mb-3">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="login-input-password"
-                  placeholder="Password"
-                />
-                <label for="login-input-password">Password</label>
-              </div>
-              <div
-                class="alert alert-danger d-none"
-                role="alert"
-                id="login-alert-password"
-              ></div>
-              <hr />
-              <button class="btn btn-primary" id="login-btn">Submit</button>
-            </form>
-            <a>Not a member yet?</a>
+            <div id="center-section">
+              <h2>Sign In to Continue</h2>
+              <form onsubmit="event.preventDefault()" class="login-section">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="login-input-email"
+                    placeholder="name@example.com"
+                  />
+                  <label for="login-input-email">Email address</label>
+                </div>
+                <div
+                  class="alert alert-danger d-none"
+                  role="alert"
+                  id="login-alert-email"
+                ></div>
+                <hr />
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="login-input-password"
+                    placeholder="Password"
+                  />
+                  <label for="login-input-password">Password</label>
+                </div>
+                <div
+                  class="alert alert-danger d-none"
+                  role="alert"
+                  id="login-alert-password"
+                ></div>
+                <hr />
+                <button class="btn btn-primary" id="login-btn">Submit</button>
+              </form>
+              <p>
+                <a>Not a member yet? </a
+                ><a class="nav-item" id="nav-signup_2">Signup here!</a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
