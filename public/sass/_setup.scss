@@ -11,12 +11,16 @@
 
 // Controls what the current active page on the navbar looks like
 .active-page {
-  display: block !important;
+  display: block;
+}
+
+.active-page #login-page {
+  display: flex;
 }
 
 // Controls what the current inactive pages on the navbar look like
 .inactive-page {
-  display: none !important;
+  display: none;
 }
 
 .navbar {
