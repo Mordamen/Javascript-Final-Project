@@ -1,18 +1,23 @@
 #login-page {
-  // height: 100vh;
+  display: flex;
 }
-
 .main-section {
   border-radius: 8px;
   box-shadow: 10px 10px 20px 5px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // margin-right: -50%;
+  // transform: translate(-50%, -50%);
   padding: 25px;
   width: 70vw;
   height: 70vh;
+}
+
+.column_1 {
+  text-align: center;
+  justify-content: center;
 }
 
 .login-section {
