@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Beleren;
+  src: url(../assets/fonts/typeface-beleren-bold-master/Beleren2016-Bold.woff);
+}
+
 body {
   // background-image: url("https://homebrewery.naturalcrit.com/assets/parchmentBackground.jpg");
   background-image: linear-gradient(
@@ -47,6 +52,12 @@ hr {
   );
   border: none;
   opacity: 100% !important;
+}
+
+#center-section {
+  margin: auto;
+  // display: flex;
+  // flex-direction: column;
 }
 
 // Prefixes for any flexbox needed, as recommended on https://css-tricks.com/snippets/css/a-guide-to-flexbox/

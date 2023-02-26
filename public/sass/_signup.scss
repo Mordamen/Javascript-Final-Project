@@ -1,15 +1,6 @@
-#signup-page {
-  max-width: 100% !important;
-}
-
-.main-nsection {
-  //   margin: auto;
-  width: 100%;
-  max-width: 100% !important;
-  height: 100%;
-}
-
 .column_n1 {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   text-align: center;
   justify-content: center;
   overflow: hidden;
@@ -17,10 +8,10 @@
   margin: auto;
   height: 100%;
   display: flex;
-  background-image: url("https://i.pinimg.com/564x/82/32/15/8232157f8d4e09717bf71b9a5e7d2929.jpg");
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2811d949-6ea8-46e1-8e8b-884f1a556750/denwl40-4eda66df-041d-4b75-bc97-ea362069bf75.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4MTFkOTQ5LTZlYTgtNDZlMS04ZThiLTg4NGYxYTU1Njc1MFwvZGVud2w0MC00ZWRhNjZkZi0wNDFkLTRiNzUtYmM5Ny1lYTM2MjA2OWJmNzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CFxgXYTsk-Jwt16ezvQW8JMHroeC7JtO_lln0wsEQ-0");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .column_n1::before {
@@ -59,14 +50,12 @@
 }
 
 .column_n2 {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   margin: auto;
   background-color: #0066ff;
   height: 100%;
   display: flex;
-}
-
-#center-section {
-  margin: auto;
 }
 
 #login-btn {
