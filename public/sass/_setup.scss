@@ -94,3 +94,7 @@ hr {
   @include flex(1 200px);
   @include order(2);
 }
+
+h2 {
+  font-size: 2rem;
+}
