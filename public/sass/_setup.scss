@@ -2,6 +2,11 @@
   border: 1px solid red !important;
 }
 
+// --------------------------------------------------------------------------
+
+$text-color: white;
+
+// --------------------------------------------------------------------------
 //Reset
 * {
   margin: 0;
@@ -28,21 +33,6 @@ body {
   height: 100vh;
 }
 
-// Controls what the current active page on the navbar looks like
-.active-page {
-  display: flex;
-  height: 100%;
-}
-
-// Controls what the current inactive pages on the navbar look like
-.inactive-page {
-  display: none;
-}
-
-.navbar {
-  background-color: transparent !important;
-}
-
 hr {
   height: 0.15em;
   background-image: linear-gradient(
@@ -58,6 +48,7 @@ hr {
   margin: auto;
   // display: flex;
   // flex-direction: column;
+  // justify-content: space-between;
 }
 
 // Prefixes for any flexbox needed, as recommended on https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -96,5 +87,5 @@ hr {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }

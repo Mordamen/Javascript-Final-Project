@@ -34,7 +34,7 @@
 
   <body>
     <!-- ------------------------------ NAVBAR ------------------------------------------ -->
-    <header class="container">
+    <header class="container d-flex">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <!-- Branded Logo: -->
@@ -78,11 +78,7 @@
             <!-- ------------------------------ NAV ITEMS  ------------------------------ -->
             <div class="offcanvas-body">
               <div class="navbar-nav me-auto my-2 my-lg-0">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="#"
-                  id="nav-about"
+                <a class="nav-link" aria-current="page" href="#" id="nav-about"
                   >About</a
                 >
               </div>
@@ -276,7 +272,7 @@
         <h1>Contact us</h1>
       </div>
       <!-- ------------------------------ lOGIN PAGE  ------------------------------------- -->
-      <section class="active-page container" id="login-page">
+      <section class="inactive-page container" id="login-page">
         <div class="row align-items-start main-section">
           <div class="col column_1">
             <div id="center-section">
@@ -285,71 +281,84 @@
             </div>
           </div>
           <div class="col column_2">
-            <div class="m-auto"><h2>Sign In to Continue</h2></div>
-            <div class="m-3">
-              <form onsubmit="event.preventDefault()" class="login-section">
-                <div class="form-floating mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="login-input-email"
-                    placeholder="name@example.com"
-                  />
-                  <label for="login-input-email">Email address</label>
-                </div>
-                <div
-                  class="alert alert-danger d-none"
-                  role="alert"
-                  id="login-alert-email"
-                ></div>
-                <hr />
-                <div class="form-floating mb-3">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="login-input-password"
-                    placeholder="Password"
-                  />
-                  <label for="login-input-password">Password</label>
-                </div>
-                <div
-                  class="alert alert-danger d-none"
-                  role="alert"
-                  id="login-alert-password"
-                ></div>
-                <hr />
-                <button class="btn btn-primary" id="login-btn">Submit</button>
-              </form>
+            <div id="center-section">
+              <div class="m-auto"><h2>Sign In to Continue</h2></div>
+              <div class="m-3">
+                <form onsubmit="event.preventDefault()" class="login-section">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="login-input-email"
+                      placeholder="name@example.com"
+                    />
+                    <label for="login-input-email">Email address</label>
+                  </div>
+                  <div
+                    class="alert alert-danger d-none"
+                    role="alert"
+                    id="login-alert-email"
+                  ></div>
+                  <hr />
+                  <div class="form-floating mb-3">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="login-input-password"
+                      placeholder="Password"
+                    />
+                    <label for="login-input-password">Password</label>
+                  </div>
+                  <div
+                    class="alert alert-danger d-none"
+                    role="alert"
+                    id="login-alert-password"
+                  ></div>
+                  <hr />
+                  <button class="btn btn-primary" id="login-btn">Submit</button>
+                </form>
+              </div>
+              <p class="m-auto login_page_cta">
+                Not a member yet? <a href="#" id="nav-signup_2">Signup here!</a>
+              </p>
             </div>
-            <p class="m-auto login_page_cta">
-              <a>Not a member yet? </a
-              ><a href="#" id="nav-signup_2">Signup here!</a>
-            </p>
           </div>
         </div>
       </section>
       <!-- ------------------------------ SIGNUP PAGE  ------------------------------------ -->
-      <section class="inactive-page container" id="signup-page">
+      <section class="active-page container" id="signup-page">
         <div class="row align-items-start main-section">
           <div class="col column_n1">
             <div id="center-section">
-              <h2>Welcome Back!</h2>
-              <a>You can sign in to access your account</a>
+              <h2>Welcome!</h2>
+              <a>Create a new account here!</a>
             </div>
           </div>
           <div class="col column_n2">
             <div id="center-section">
-              <h2>Sign In to Continue</h2>
+              <h2>Create an Account</h2>
               <form onsubmit="event.preventDefault()">
+                <!-- -------------------------------Name --------------------------------->
+                <a>Name</a>
                 <div class="form-floating mb-3">
                   <input
                     type="text"
                     class="form-control"
-                    id="register-input-name"
+                    id="register-input-first-name"
                     placeholder="Your name"
                   />
-                  <label for="register-input-name">Name</label>
+                  <label for="register-input-name"> First Name</label>
                 </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="register-input-last-name"
+                    placeholder="Your name"
+                  />
+                  <label for="register-input-name"> Last Name</label>
+                </div>
+                <!-- ----------------- Alert Message for Incorrect Names ------------------ -->
                 <div
                   class="alert alert-danger d-none"
                   role="alert"
@@ -357,6 +366,8 @@
                 >
                   Name rules
                 </div>
+                <hr />
+                <!-- --------------------------- Communication ------------------------------->
                 <div class="form-floating mb-3">
                   <input
                     type="email"
@@ -366,12 +377,33 @@
                   />
                   <label for="register-input-email">Email address</label>
                 </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="register-input-phone-number"
+                    placeholder="name@example.com"
+                  />
+                  <label for="register-input-email">Email address</label>
+                </div>
+                <!-- ------------- Alert Message for Incorrect Communication -------------- -->
                 <div
                   class="alert alert-danger d-none"
                   role="alert"
                   id="register-alert-email"
                 >
                   Email rules
+                </div>
+                <hr />
+                <!-- ------------------------------ Password ------------------------------ -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="register-input-password"
+                    placeholder="Password"
+                  />
+                  <label for="register-input-password">Password</label>
                 </div>
                 <div class="form-floating mb-3">
                   <input
@@ -382,24 +414,21 @@
                   />
                   <label for="register-input-password">Password</label>
                 </div>
+                <!-- ---------------- Alert Message for Incorrect Password ---------------- -->
                 <div
                   class="alert alert-danger d-none"
                   role="alert"
                   id="register-alert-password"
-                >
-                  Name rules
-                </div>
-                <button
-                  class="btn btn-danger"
-                  disabled="true"
-                  id="register-btn"
-                >
+                ></div>
+                <!-- -------------------------- Register Button --------------------------- -->
+                <button class="btn btn-primary" id="register-btn">
                   Register
                 </button>
               </form>
+              <!-- ----------------------- Sign In Alternative Link ----------------------- -->
               <p>
-                <a>Already a member? </a
-                ><a class="nav-item" id="nav-signup_2">Signup here!</a>
+                Already have an account?
+                <a href="#" id="nav-login2">Sign In</a>
               </p>
             </div>
           </div>

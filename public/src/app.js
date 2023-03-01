@@ -13,6 +13,7 @@ const navAboutusLink = document.getElementById("nav-about");
 const navRegisterPageLink = document.getElementById("nav-signup");
 const navRegisterPage2Link = document.getElementById("nav-signup_2");
 const navLoginPageLink = document.getElementById("nav-login");
+const navLoginPageLink2 = document.getElementById("nav-login2");
 const navEditProfilePage = document.getElementById("nav-edit-profile-page");
 const navLogout = document.getElementById("nav-logout");
 
@@ -38,6 +39,9 @@ navRegisterPage2Link.addEventListener("click", function () {
   handlePageChange(PAGES.REGISTER);
 });
 navLoginPageLink.addEventListener("click", function () {
+  handlePageChange(PAGES.LOGIN);
+});
+navLoginPageLink2.addEventListener("click", function () {
   handlePageChange(PAGES.LOGIN);
 });
 navEditProfilePage.addEventListener("click", () => {
