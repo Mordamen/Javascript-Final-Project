@@ -1,6 +1,9 @@
 @import "setup";
 @import "navbar";
-@import "login";
-@import "signup";
 @import "other";
 @import "toast";
+
+// --------------- Web Pages
+@import "index";
+@import "login";
+@import "signup";

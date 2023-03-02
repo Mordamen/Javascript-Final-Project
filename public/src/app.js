@@ -8,6 +8,7 @@ import { showNewPopup } from "./pages/HomePage.js";
 import initializeNavbar from "./components/Navbar.js";
 import checkIfConnected from "./utilities/checkIfConnected.js";
 
+const navBrandLink = document.getElementById("nav-brand");
 const navHomeLink = document.getElementById("nav-home");
 const navAboutusLink = document.getElementById("nav-about");
 const navRegisterPageLink = document.getElementById("nav-signup");
@@ -26,6 +27,9 @@ window.addEventListener("load", () => {
   }
 });
 
+navBrandLink.addEventListener("click", function () {
+  handlePageChange(PAGES.HOME);
+});
 navHomeLink.addEventListener("click", function () {
   handlePageChange(PAGES.HOME);
 });
