@@ -33,7 +33,7 @@
   </head>
 
   <body>
-    <!-- ------------------------------ NAVBAR ------------------------------------------ -->
+    <!-- ------------------------------- NAVBAR ------------------------------------------- -->
     <header class="container d-flex">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -348,108 +348,115 @@
           </div>
           <div class="col column_n2">
             <div id="center-section">
-              <h2>Create an Account</h2>
-              <form class="form-direction" onsubmit="event.preventDefault()">
-                <!-- -------------------------------Name --------------------------------->
+              <!-- ------------------------------- Header --------------------------------- -->
+              <div><h2>Create an Account</h2></div>
+              <!-- --------------------------- Register Form ------------------------------ -->
+              <div>
+                <form
+                  class="form-direction container"
+                  onsubmit="event.preventDefault()"
+                >
+                  <!-- -------------------------------Name -------------------------------- -->
 
-                <div class="register-section">
-                  <label>First Name</label>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="register-input-name"
-                      placeholder="Your name"
-                    />
-                    <label for="register-input-name"> First Name</label>
+                  <div class="register-section">
+                    <label>First Name</label>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="register-input-name"
+                        placeholder="Your name"
+                      />
+                      <label for="register-input-name"> First Name</label>
+                    </div>
                   </div>
-                </div>
-                <div class="register-section">
-                  <label>Last Name</label>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="register-input-last-name"
-                      placeholder="Your name"
-                    />
-                    <label for="register-input-name"> Last Name</label>
+                  <div class="register-section">
+                    <label>Last Name</label>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="register-input-last-name"
+                        placeholder="Your name"
+                      />
+                      <label for="register-input-name"> Last Name</label>
+                    </div>
                   </div>
-                </div>
 
-                <!-- ----------------- Alert Message for Incorrect Names ------------------ -->
-                <div
-                  class="alert alert-danger d-none"
-                  role="alert"
-                  id="register-alert-name"
-                ></div>
-                <hr />
-                <!-- --------------------------- Communication ------------------------------->
-                <div class="register-section">
-                  <label>Email</label>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="register-input-email"
-                      placeholder="name@example.com"
-                    />
-                    <label for="register-input-email">Email address</label>
+                  <!-- ---------------- Alert Message for Incorrect Names ----------------- -->
+                  <div
+                    class="alert alert-danger d-none"
+                    role="alert"
+                    id="register-alert-name"
+                  ></div>
+                  <hr />
+                  <!-- -------------------------- Communication --------------------------- -->
+                  <div class="register-section">
+                    <label>Email</label>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="register-input-email"
+                        placeholder="name@example.com"
+                      />
+                      <label for="register-input-email">Email address</label>
+                    </div>
                   </div>
-                </div>
-                <div class="register-section">
-                  <label>Phone Number</label>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="phone"
-                      class="form-control"
-                      id="register-input-phone-number"
-                      placeholder="name@example.com"
-                    />
-                    <label for="register-input-email">Phone Number</label>
-                  </div>
-                </div>
+                  <div class="register-section">
+                    <label>Phone Number</label>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="phone"
+                        class="form-control"
+                        id="register-input-phone-number"
+                        placeholder="name@example.com"
+                      />
+                      <label for="register-input-email">Phone Number</label>
+                    </div>
 
-                <!-- ------------- Alert Message for Incorrect Communication -------------- -->
-                <div
-                  class="alert alert-danger d-none"
-                  role="alert"
-                  id="register-alert-email"
-                ></div>
-                <hr />
-                <!-- ------------------------------ Password ------------------------------ -->
-                <div class="register-section">
-                  <label>Enter Passowrd</label>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="register-input-password"
-                      placeholder="Password"
-                    />
-                    <label for="register-input-password">Password</label>
+                    <!-- ------------ Alert Message for Incorrect Communication ----------- -->
+                    <div
+                      class="alert alert-danger d-none form-direction"
+                      role="alert"
+                      id="register-alert-email"
+                    ></div>
                   </div>
-                </div>
-                <div class="register-section">
-                  <label>Re-enter Password</label>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="re-register-input-password"
-                      placeholder="Password"
-                    />
-                    <label for="register-input-password">Password</label>
+                  <hr />
+                  <!-- ------------------------------ Password ---------------------------- -->
+                  <div class="register-section">
+                    <label>Enter Password</label>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="register-input-password"
+                        placeholder="Password"
+                      />
+                      <label for="register-input-password">Password</label>
+                    </div>
                   </div>
-                </div>
+                  <div class="register-section">
+                    <label>Re-enter Password</label>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="re-register-input-password"
+                        placeholder="Password"
+                      />
+                      <label for="register-input-password">Password</label>
+                    </div>
+                  </div>
 
-                <!-- ---------------- Alert Message for Incorrect Password ---------------- -->
-                <div
-                  class="alert alert-danger d-none"
-                  role="alert"
-                  id="register-alert-password"
-                ></div>
-              </form>
+                  <!-- ---------------- Alert Message for Incorrect Password -------------- -->
+                  <div
+                    class="alert alert-danger d-none"
+                    role="alert"
+                    id="register-alert-password"
+                  ></div>
+                </form>
+              </div>
               <!-- --------------------------- Register Button ---------------------------- -->
               <div>
                 <button class="btn btn-primary" id="register-btn">
@@ -457,10 +464,12 @@
                 </button>
               </div>
               <!-- ----------------------- Sign In Alternative Link ----------------------- -->
-              <p>
-                Already have an account?
-                <a href="#" id="nav-login2">Sign In</a>
-              </p>
+              <div>
+                <p>
+                  Already have an account?
+                  <a href="#" id="nav-login2">Sign In</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>

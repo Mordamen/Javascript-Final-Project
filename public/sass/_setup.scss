@@ -57,13 +57,18 @@ hr {
 }
 
 #center-section {
-  margin: auto;
+  // margin-top: 64px;
+  // margin-bottom: 64px;
+  // margin: auto;
+  // margin-left: 64px;
+  // margin-right: 64px;
   align-items: center;
   display: flex;
-  flex-direction: column !important;
-  justify-content: center !important;
+  flex-wrap: wrap;
+  flex-direction: column;
+  -webkit-box-align: center;
+  // justify-content: center !important;
   // justify-content: space-around;
-  // flex-wrap: wrap;
 }
 
 h2 {
