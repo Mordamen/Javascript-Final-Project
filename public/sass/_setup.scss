@@ -4,7 +4,7 @@
 
 // --------------------------------------------------------------------------
 
-$text-color: white;
+$main-text: white;
 
 // --------------------------------------------------------------------------
 //Reset
@@ -20,7 +20,7 @@ $text-color: white;
 }
 
 body {
-  background-image: url("../assets/imgs/background6.jpg");
+  background-image: url("../assets/imgs/background-image.webp");
   background-position: center;
   background-size: cover;
   // background-image: url("https://homebrewery.naturalcrit.com/assets/parchmentBackground.jpg");
@@ -32,8 +32,9 @@ body {
   // background-repeat: no-repeat;
   // background-size: cover;
   display: grid;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 10% 85% 5%;
   min-height: 100vh;
+  color: $main-text;
 }
 
 hr {
