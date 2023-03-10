@@ -20,21 +20,23 @@ $main-text: white;
 }
 
 body {
-  background-image: url("../assets/imgs/background-image.webp");
-  background-position: center;
-  background-size: cover;
-  // background-image: url("https://homebrewery.naturalcrit.com/assets/parchmentBackground.jpg");
-  // background-image: linear-gradient(
-  //   to bottom,
-  //   rgb(0, 68, 255, 1),
-  //   rgba(0, 102, 255, 0)
-  // );
-  // background-repeat: no-repeat;
-  // background-size: cover;
   display: grid;
   grid-template-rows: 10% 85% 5%;
   min-height: 100vh;
   color: $main-text;
+}
+
+.index-page {
+  background-image: url("../assets/imgs/index-background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.other-pages {
+  background-image: url("../assets/imgs/background-image.webp");
+  background-position: center;
+  background-size: cover;
 }
 
 hr {
@@ -61,18 +63,11 @@ hr {
 }
 
 #center-section {
-  // margin-top: 64px;
-  // margin-bottom: 64px;
-  // margin: auto;
-  // margin-left: 64px;
-  // margin-right: 64px;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   -webkit-box-align: center;
-  // justify-content: center !important;
-  // justify-content: space-around;
 }
 
 h2 {

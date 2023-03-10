@@ -27,26 +27,38 @@ function handlePageChange(pageToDisplay) {
     case PAGES.HOME:
       HOMEPAGELINK.classList.remove("inactive-page");
       HOMEPAGELINK.classList.add("active-page");
+      document.body.classList.remove("other-pages");
+      document.body.classList.add("index-page");
       break;
     case PAGES.ABOUT:
       ABOUTUSPAGELINK.classList.remove("inactive-page");
       ABOUTUSPAGELINK.classList.add("active-page");
+      document.body.classList.remove("index-page");
+      document.body.classList.add("other-pages");
       break;
     case PAGES.LOGIN:
       LOGINTUSPAGELINK.classList.remove("inactive-page");
       LOGINTUSPAGELINK.classList.add("active-page");
+      document.body.classList.remove("index-page");
+      document.body.classList.add("other-pages");
       break;
     case PAGES.REGISTER:
       REGISTERUSPAGELINK.classList.remove("inactive-page");
       REGISTERUSPAGELINK.classList.add("active-page");
+      document.body.classList.remove("index-page");
+      document.body.classList.add("other-pages");
       break;
     case PAGES.PROFILE:
       PROFILEPAGELINK.classList.remove("inactive-page");
       PROFILEPAGELINK.classList.add("active-page");
+      document.body.classList.remove("index-page");
+      document.body.classList.add("other-pages");
       break;
     default:
       PAGE404PAGELINK.classList.remove("inactive-page");
       PAGE404PAGELINK.classList.add("active-page");
+      document.body.classList.remove("index-page");
+      document.body.classList.add("other-pages");
       break;
   }
 }
