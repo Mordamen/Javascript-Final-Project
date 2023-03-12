@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
-  <body>
+  <body class="index-page">
     <!-- ------------------------------- NAVBAR ------------------------------------------- -->
     <header class="container d-flex">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -156,7 +156,25 @@
     <main>
       <div id="toast"></div>
       <!-- ------------------------------ HOME PAGE  -------------------------------------- -->
-      <section class="inactive-page container" id="home-page"></section>
+      <section class="active-page container" id="home-page-hero">
+        <div class="hero-section login-page-form">
+          <div class="form-value">
+            <!-- <form action=""> -->
+            <!-- ------------------------------- Header --------------------------------- -->
+            <h1>Magic Cards like never before!</h1>
+            <!-- ------------------------------- Copy ---------------------------------- -->
+            <label for=""
+              >Unleash your imagination with our stunning digital alters that
+              bring your favorite cards to life like never before.
+            </label>
+
+            <!-- ---------------------------- Shop Button ------------------------------- -->
+            <button class="shop-button" id="shop-now">Shop Now</button>
+            <!-- </form> -->
+          </div>
+        </div>
+      </section>
+      <section class="active-page container" id="home-page-shop"></section>
       <!-- ------------------------------ ABOUT PAGE  ------------------------------------- -->
       <section class="inactive-page container" id="about-page">
         <h1>About us</h1>
@@ -344,7 +362,7 @@
         </div>
       </section>
       <!-- ------------------------------ SIGNUP PAGE  ------------------------------------ -->
-      <section class="active-page container" id="signup-page">
+      <section class="inactive-page container" id="signup-page">
         <div class="form-box">
           <div class="form-value">
             <form action="">
@@ -393,8 +411,8 @@
                 </div>
                 <div class="inputbox">
                   <div>
-                    <input type="tel" id="register-input-phone" required />
-                    <label for="register-input-phone">City</label>
+                    <input type="tel" id="register-input-city" required />
+                    <label for="register-input-city">City</label>
                   </div>
                   <div class="form-icons">
                     <i class="fa-solid fa-city"></i>
@@ -404,8 +422,8 @@
               <div class="form-direction">
                 <div class="inputbox">
                   <div>
-                    <input type="text" id="register-input-email" required />
-                    <label for="register-input-email">Street</label>
+                    <input type="text" id="register-input-street" required />
+                    <label for="register-input-street">Street</label>
                   </div>
                   <div class="form-icons">
                     <i class="fa-solid fa-house-crack"></i>
@@ -413,8 +431,8 @@
                 </div>
                 <div class="inputbox">
                   <div>
-                    <input type="tel" id="register-input-phone" required />
-                    <label for="register-input-phone">House Number</label>
+                    <input type="tel" id="register-input-house" required />
+                    <label for="register-input-house">House Number</label>
                   </div>
                   <div class="form-icons">
                     <!-- <ion-icon name="home-outline"></ion-icon> -->
@@ -423,8 +441,8 @@
                 </div>
                 <div class="inputbox">
                   <div>
-                    <input type="tel" id="register-input-phone" required />
-                    <label for="register-input-phone">Zip Code</label>
+                    <input type="tel" id="register-input-zip" required />
+                    <label for="register-input-zip">Zip Code</label>
                   </div>
                   <div class="form-icons">
                     <i class="fa-solid fa-envelope-open-text"></i>

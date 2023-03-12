@@ -26,8 +26,15 @@ body {
   color: $main-text;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .index-page {
-  background-image: url("../assets/imgs/index-background.webp");
+  background-image: url("../assets/imgs/background-index.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

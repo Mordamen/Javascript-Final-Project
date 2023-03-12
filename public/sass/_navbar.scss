@@ -9,6 +9,11 @@
   display: none;
 }
 
+header {
+  backdrop-filter: blur(15px);
+  min-width: 100% !important;
+}
+
 .navbar {
   background-color: transparent !important;
   font-family: Beleren;
