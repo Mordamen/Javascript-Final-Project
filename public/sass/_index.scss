@@ -2,6 +2,11 @@
   flex-direction: column;
 }
 
+#home-page-hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: flex-end;
+}
 .shop-button {
   display: flex;
   margin: auto;
@@ -16,6 +21,7 @@
   cursor: pointer;
   font-size: 1em;
   font-weight: 600;
+  color: black;
 }
 
 .hero-section {
@@ -27,6 +33,7 @@
   // backdrop-filter: blur(15px);
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+
   font-family: Beleren;
 }
