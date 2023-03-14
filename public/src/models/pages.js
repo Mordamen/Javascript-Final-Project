@@ -1,6 +1,5 @@
 const PAGES = {
-  HOME_HERO: "home-page-hero",
-  HOME_SHOP: "home-page-shop",
+  HOME: "home-page",
   ABOUT: "about-page",
   LOGIN: "login-page",
   REGISTER: "signup-page",

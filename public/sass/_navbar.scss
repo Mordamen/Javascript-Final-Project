@@ -1,7 +1,7 @@
 // Controls what the current active page on the navbar looks like
 .active-page {
   display: flex;
-  height: 100%;
+  // height: 90vh;
 }
 
 // Controls what the current inactive pages on the navbar look like
@@ -10,8 +10,9 @@
 }
 
 header {
-  backdrop-filter: blur(15px);
+  // backdrop-filter: blur(15px);
   min-width: 100% !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar {
@@ -20,7 +21,18 @@ header {
 
   display: flex;
   width: 100%;
-  --bs-nav-link-color: ;
-  --bs-navbar-hover-color: ;
-  // --bs-emphasis-color-rgb: $text-color !important;
+  // Color the Navbar Text
+  color: var(--bs-offcanvas-color);
+  --bs-offcanvas-color: var(--bs-body-color);
+  --bs-body-color: $main-text;
+
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+  --bs-emphasis-color-rgb: $main-text;
+
+  // Color the Navbar Text on Hover
+  --bs-navbar-hover-color: yellow;
+  // Color the Active Navbar Text
+  --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  // Color Disabled Navbar Text
+  --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
 }
